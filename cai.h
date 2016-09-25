@@ -1,9 +1,7 @@
 #ifndef CAI_H
 #define CAI_H
 
-#include "random.h"
-
-void init_cai();
+void cai_init();
 int cai_extract();
 char* cai_true();
 char* cai_false();
