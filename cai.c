@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+#include "cai.h"
 #include "random.h"
 
 void cai_init()
@@ -8,7 +9,7 @@ void cai_init()
 }
 int cai_extract() 
 {
-  return random_extract(0, 9);  
+  return random_extract(0, 10);  
 }
 char* cai_true() 
 {
