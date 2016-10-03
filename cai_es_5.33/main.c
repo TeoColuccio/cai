@@ -9,11 +9,12 @@ int main()
   
   cai_init();
 
+  do {
+
   a = cai_extract();
   b = cai_extract();
   prod = a * b;
 
-  do {
   printf("Quando fa la seguente moltiplicazione %d * %d?\n", a, b);
   scanf("%d", &risposta);
 

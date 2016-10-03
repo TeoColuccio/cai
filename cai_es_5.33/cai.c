@@ -15,7 +15,6 @@ char* cai_true()
 {
   int rand;
 
-  random_init();
   rand = random_extract(1, 5);
 
   switch (rand) {
@@ -39,7 +38,6 @@ char* cai_false()
 {
   int rand;
 
-  random_init();
   rand = random_extract(1, 5);
 
   switch (rand) {
