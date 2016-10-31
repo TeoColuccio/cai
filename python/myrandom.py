@@ -1,8 +1,5 @@
 from random import *
 
-def myrandom_init():
-    seed()
-
 def myrandom_beetween(min, max):
     return randint(min, max)
 
