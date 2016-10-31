@@ -14,7 +14,10 @@ while conta < 10:
     prod = a * b
     
     print 'Quanto fa la seguente moltiplicazione: ', a, '*', b
-    risposta = input()
+    risposta = raw_input()
+    if risposta!='':
+        risposta = int(risposta)
+    print "risposta ", risposta
 
     if risposta != prod:
         print cai_false()
