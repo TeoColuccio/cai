@@ -1,13 +1,10 @@
-from myrandom import *
-
-def cai_init():
-    myrandom_init()
+from random import *
 
 def cai_extract():
-    return myrandom_beetween(0, 10)
+    return randrange(0, 10)
 
 def cai_true():
-    rand = myrandom_beetween(1, 5)
+    rand = randrange(1, 5)
 
     if rand == 1:
         return 'Very good!'
@@ -19,7 +16,7 @@ def cai_true():
         return 'Keep up the good work!'
 
 def cai_false():
-    rand = myrandom_beetween(1, 5)
+    rand = randrange(1, 5)
  
     if rand == 1:
         return 'No. Please try again.'
