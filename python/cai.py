@@ -2,7 +2,10 @@ from random import *
 
 def cai_extract():
     return randrange(0, 10)
-
+def cai_extract_livello_2():
+    return randrange(0, 100)
+def cai_extract_livello_3():
+    return randrange(0, 1000)
 def cai_true():
     rand = randrange(1, 5)
 
