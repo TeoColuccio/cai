@@ -30,5 +30,19 @@ def cai_false():
     elif rand == 4:
         return 'No. Keep trying.'
 
+def cai_play(a, b, esatte):
+    prod = a * b 
+
+    print 'Quanto fa la seguente moltiplicazione: ', a, '*', b
+    risposta = input()
+
+    if risposta != prod:
+        print cai_false()
+    else:
+        print cai_true()
+        esatte += 1
+        
+    return esatte
+
 if __name__ == '__main__':
     print cai_true()
