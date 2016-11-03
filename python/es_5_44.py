@@ -21,21 +21,21 @@ if livello == 1:
     while conta < 10:
         a = cai_extract()
         b = cai_extract()
-        cai_play(a, b, esatte)
+        cai_play(opzione, a, b, esatte)
         conta += 1
 # Livello 2
 elif livello == 2:
     while conta < 10:
         a = cai_extract_livello_2()
         b = cai_extract_livello_2()
-        cai_play(a, b, esatte)
+        cai_play(opzione, a, b, esatte)
         conta += 1
 # Livello 3
 elif livello == 3:
     while conta < 10:
         a = cai_extract_livello_3()
         b = cai_extract_livello_3()
-        cai_play(a, b, esatte)
+        cai_play(opzione, a, b, esatte)
         conta += 1
 # Resoconto
 if esatte < 7:

@@ -30,13 +30,35 @@ def cai_false():
     elif rand == 4:
         return 'No. Keep trying.'
 
-def cai_play(a, b, esatte):
-    prod = a * b 
+def cai_play(opzione, a, b, esatte):
+    if opzione == 1:
+        ris = a + b
+        
+        print 'Quanto fa la seguente addizione: ', a, '+', b
+        risposta = input()
+    
+    elif opzione == 2: 
+        ris = a - b
+        
+        print 'Quanto fa la seguente sottrazione: ', a, '-', b
+        risposta = input()
+    
+    elif opzione == 3:
+        ris = a * b
+        
+        print 'Quanto fa la seguente moltiplicazione: ', a, '*', b
+        risposta = input()
+    
+    elif opzione == 4:
+        ris = a / b
 
-    print 'Quanto fa la seguente moltiplicazione: ', a, '*', b
-    risposta = input()
+        print 'Quanto fa la seguente addizione: ', a, '/', b
+        risposta = input()
+    
+   #elif opzione == 5: 
+    #   rand = randrange(0, 6)
 
-    if risposta != prod:
+    if risposta != ris:
         print cai_false()
     else:
         print cai_true()
