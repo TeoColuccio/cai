@@ -16,28 +16,12 @@ while opzione != 1 and opzione != 2 and opzione != 3 and opzione != 4 and opzion
 # Scelta livello
 while livello != 1 and livello != 2 and livello != 3:
     livello = input('Scegli un livello: 1(operazioni a 1 cifra),  2(operazioni a 2 cifre), 3(operazioni a 3 cifre): ')
-# Livello 1
-if livello == 1:
+    
     while conta < 10:
-        a = cai_extract()
-        b = cai_extract()
+        a = cai_extract(livello)
+        b = cai_extract(livello)
         cai_play(opzione, a, b, esatte)
         conta += 1
-# Livello 2
-elif livello == 2:
-    while conta < 10:
-        a = cai_extract_livello_2()
-        b = cai_extract_livello_2()
-        cai_play(opzione, a, b, esatte)
-        conta += 1
-# Livello 3
-elif livello == 3:
-    while conta < 10:
-        a = cai_extract_livello_3()
-        b = cai_extract_livello_3()
-        cai_play(opzione, a, b, esatte)
-        conta += 1
-# Resoconto
 if esatte < 7:
     print 'Please ask your instructor for extra help!'
 else: 
