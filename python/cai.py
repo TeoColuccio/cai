@@ -52,8 +52,9 @@ def cai_play(opzione, a, b, esatte):
         print 'Quanto fa la seguente addizione: ', a, '/', b
         risposta = input()
     
-   #elif opzione == 5: 
-    #   rand = randrange(0, 6)
+    elif opzione == 5: 
+        rand = randrange(1, 5)
+        return cai_play(rand, a, b, esatte)
 
     if risposta != ris:
         print cai_false()
